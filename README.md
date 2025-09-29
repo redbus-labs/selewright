@@ -171,15 +171,14 @@ public class Demo {
 
     /**
      * A sample test to demonstrate the usage of Selewright
-     * Searches for 'selewright' repository on Author's GitHub and verifies readme file presence
+     * Selects 'selewright' repository on redbus-labs GitHub and verifies readme file presence
      * @param selewright
      * @return
      */
     private static boolean runSampleTest(Selewright selewright) {
-        selewright.openUrl("https://github.com/Krishna-D-Hegde?tab=repositories");
-        selewright.enterText("//input[@id='your-repos-filter']", "selewright");
-        selewright.click("//a[@href='/Krishna-D-Hegde/selewright']");
-        return selewright.isDisplayed("(//a[@href='/Krishna-D-Hegde/selewright/blob/main/README.md'])[last()]");
+        selewright.openUrl("https://github.com/orgs/redbus-labs/repositories");
+        selewright.click("//a[@href='/redbus-labs/selewright']");
+        return selewright.isDisplayed("(//a[@href='/redbus-labs/selewright/blob/main/README.md'])[last()]");
     }
 }
 ```
