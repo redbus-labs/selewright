@@ -63,15 +63,20 @@ public class SeleniumImplementation implements Selewright {
     @Override
     public void click(String address) {
         waitForElementToBeClickable(address, getGlobalWait());
-        WebElement element = findElement(address);
-        highlight(element);
+        waitForElementToBeVisible(address, getGlobalWait());
+        List<WebElement> elements = findElements(address);
+        if(elements.size()>1){
+            System.out.println("Multiple elements found for the locator: "+address+". Clicking on the first one.");
+            throw new RuntimeException("Multiple elements found for the locator: "+address+". Clicking on the first one.");
+        }
+        highlight(elements.get(0));
         try {
             findElement(address).click();
         } catch (Exception e) {
             System.out.println("Normal click did not work for" + address + " Trying with js");
-            js.executeScript("arguments[0].click();", element);
+            js.executeScript("arguments[0].click();", elements.get(0));
         }
-        unhighlight(element);
+        unhighlight(elements.get(0));
         waitUntilPageLoadComplete();
     }
 
