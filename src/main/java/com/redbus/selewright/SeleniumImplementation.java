@@ -63,7 +63,6 @@ public class SeleniumImplementation implements Selewright {
     @Override
     public void click(String address) {
         waitForElementToBeClickable(address, getGlobalWait());
-        waitForElementToBeVisible(address, getGlobalWait());
         List<WebElement> elements = findElements(address);
         if(elements.size()>1){
             System.out.println("Multiple elements found for the locator: "+address+". Clicking on the first one.");
