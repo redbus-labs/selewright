@@ -64,7 +64,7 @@ The corresponding methods in `SeleniumImplementation` are left unimplemented as 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Krishna-D-Hegde/selewright.git
+   git clone https://github.com/redbus-labs/selewright.git
    cd selewright
    ```
 
@@ -81,7 +81,7 @@ The corresponding methods in `SeleniumImplementation` are left unimplemented as 
 
 1. **Download the JAR** (Coming soon on Maven Central Repository)
 
-   Download [`selewright-1.0-SNAPSHOT.jar`](https://github.com/Krishna-D-Hegde/selewright/blob/main/selewright-1.0-SNAPSHOT.jar) and place it in your project root.
+   Download [`selewright-1.0-SNAPSHOT.jar`](https://github.com/redbus-labs/selewright/blob/main/selewright-1.0-SNAPSHOT.jar) and place it in your project root.
 
 2. **Add to your `pom.xml`**
    ```xml
@@ -185,7 +185,7 @@ public class Demo {
 
 ## 📚 Core Methods
 
-Refer [Selewright-Interface](https://github.com/Krishna-D-Hegde/selewright/blob/main/src/main/java/com/redbus/selewright/Selewright.java) for complete method list with Javadocs.
+Refer [Selewright-Interface](https://github.com/redbus-labs/selewright/blob/main/src/main/java/com/redbus/selewright/Selewright.java) for complete method list with Javadocs.
 
 
 ## 🔄 Migration Guide
@@ -224,7 +224,7 @@ We welcome contributions from the community! This project can only evolve with o
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-Please read our [Contributing Guidelines](https://github.com/Krishna-D-Hegde/selewright/blob/main/CONTRIBUTING.md) before submitting contributions.
+Please read our [Contributing Guidelines](https://github.com/redbus-labs/selewright/blob/main/CONTRIBUTING.md) before submitting contributions.
 
 ### Development Setup
 
@@ -263,6 +263,6 @@ Please read our [Contributing Guidelines](https://github.com/Krishna-D-Hegde/sel
 
 ## 🐛 Issues and Support
 
-Found a bug or need help? Please [open an issue](https://github.com/Krishna-D-Hegde/selewright/issues) on GitHub.
+Found a bug or need help? Please [open an issue](https://github.com/redbus-labs/selewright/issues) on GitHub.
 
 ---
