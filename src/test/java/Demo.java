@@ -51,7 +51,10 @@ public class Demo {
      */
     private static boolean runSampleTest(Selewright selewright) {
         selewright.openUrl("https://github.com/orgs/redbus-labs/repositories");
+        long startTime = System.nanoTime();
         selewright.click("//a[@href='/redbus-labs/selewright']");
+        long endTime = System.nanoTime();
+        System.out.println("Time taken to click and load repository: " + (endTime - startTime) / 1_000_000 + " ms");
         return selewright.isDisplayed("(//a[@href='/redbus-labs/selewright/blob/main/README.md'])[last()]");
     }
 }
