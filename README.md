@@ -47,10 +47,6 @@ selewright/
 ```
 
 
-> **Note**:
-We recommend Playwright for tests which involve fetching or mocking APIs invoked by the browser frontend.
-The corresponding methods in `SeleniumImplementation` are left unimplemented as Selenium currently supports network interception only in Chrome via the DevTools Protocol.
-
 
 ## 🚀 Quick Start
 
@@ -79,7 +75,7 @@ The corresponding methods in `SeleniumImplementation` are left unimplemented as 
 
 ### Maven Setup
 
-1. **Download the JAR** (Coming soon on Maven Central Repository)
+1. **Download the JAR**
 
    Download [`selewright-1.0-SNAPSHOT.jar`](https://github.com/redbus-labs/selewright/blob/main/selewright-1.0-SNAPSHOT.jar) and place it in your project root.
 
